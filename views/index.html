@@ -1,0 +1,60 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Request Header Parser Microservice</title>
+    <meta name="description" content="A Request Header Parser Microservice">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="container">
+    <header>
+      <h1>
+        Request header parser microservice
+      </h1>
+    </header>
+
+    <main>
+            <blockquote>
+                Instructions:
+                <ul>
+                <li> You can get the IP address, language and operating system for your browser sending a request to the "/whoami" endpoint.</li>
+                </ul>
+            </blockquote>
+            <h3>Example usage:</h3>
+            <code>https://request-header-parser-hp.glitch.me/whoami</code>
+            <h3>Example output:</h3>
+            <code>
+            {"ipaddress":"68.125.105.99","language":"en-US","os":{"name":"Mac OS","version":"10.13.2"}}    
+            </code>
+    </main>
+
+    <footer>
+      <h4>About this page</h4>
+      <p>Made with <i class="fa fa-coffee" aria-hidden="true"></i> and <i class="fa fa-headphones" aria-hidden="true"></i>
+      <br>by <a href="https://github.com/psadeghian">Pasha Sadeghian</a> and <a href="https://github.com/mht940">Mohammad Hossein Tabrizian</a>.</p>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+    </footer>
+    </div>
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+  </body>
+</html>
